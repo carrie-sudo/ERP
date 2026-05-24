@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ERP 公版系統｜Dashboard</title>
+<link href="assets/styles.css" rel="stylesheet"/>
+<script defer="" src="assets/app.js"></script>
+</head>
+<body class="app-shell" data-page="dashboard">
+<aside class="sidebar">
+<div class="brand"><div class="brand-mark">LOGO</div><div class="brand-text"><h1>企業 LOGO</h1><p>ERP 系統標題</p></div></div>
+<nav class="nav-group">
+<div class="nav-caption">General</div>
+<a class="nav-link" data-page="dashboard" href="index.html"><span aria-hidden="true" class="nav-emoji ico-home"></span><span>首頁儀表板</span></a>
+<a class="nav-link" data-page="master" href="master-data.html"><span aria-hidden="true" class="nav-emoji ico-master"></span><span>主數據管理</span></a>
+<a class="nav-link" data-page="procurement" href="procurement.html"><span aria-hidden="true" class="nav-emoji ico-cart"></span><span>採購管理</span></a>
+<a class="nav-link" data-page="sales" href="sales.html"><span aria-hidden="true" class="nav-emoji ico-briefcase"></span><span>銷售管理</span></a>
+<a class="nav-link" data-page="inventory" href="inventory.html"><span aria-hidden="true" class="nav-emoji ico-box"></span><span>庫存管理</span></a>
+<a class="nav-link" data-page="finance" href="finance.html"><span aria-hidden="true" class="nav-emoji ico-card"></span><span>財務管理</span></a>
+<a class="nav-link" data-page="hr" href="hr.html"><span aria-hidden="true" class="nav-emoji ico-users"></span><span>人資管理</span></a>
+<a class="nav-link" data-page="approvals" href="approvals.html"><span aria-hidden="true" class="nav-emoji ico-checksquare"></span><span>簽核中心</span></a>
+<a class="nav-link" data-page="reports" href="reports.html"><span aria-hidden="true" class="nav-emoji ico-chart"></span><span>報表分析</span></a>
+<a class="nav-link" data-page="settings" href="settings.html"><span aria-hidden="true" class="nav-emoji ico-settings"></span><span>系統設定</span></a>
+</nav>
+<div class="sidebar-footer">低飽和灰藍色系／桌面優先／適合後續同步至 Figma 的企業 ERP 全站雛形。</div>
+</aside>
+<main class="main">
+<header class="topbar">
+<div class="searchbar"><span>🔎</span><input placeholder="全域搜尋：單號、料號、客戶、員工"/></div>
+<div class="top-actions"><button class="icon-btn" data-open-modal="示意：此按鈕可延伸為站內通知中心，檢視公告、流程提醒與系統訊息。" type="button">通知 6</button><button class="icon-btn" data-open-modal="示意：此按鈕可延伸為個人待辦清單入口，快速查看待簽核、待處理與異常事項。" type="button">待辦 14</button><div class="avatar">AD</div></div>
+</header>
+<div class="content">
+<div class="breadcrumb"><span>首頁</span><span>/</span><span>儀表板</span></div>
+<div class="page-head">
+<div><h1 class="page-title">Dashboard 儀表板</h1><p class="page-desc">聚焦今日待辦、流程異常、營運概況與快捷入口，讓員工在登入後第一時間掌握需要完成的工作與重要提醒。</p></div>
+<div class="action-row"><button class="btn btn-secondary" data-open-modal="此為 Dashboard 設定示意，可於 Figma 中延伸為卡片排序、個人化欄位與首頁模組控制。">首頁設定</button><a class="btn btn-primary" href="approvals.html">前往待我簽核</a></div>
+</div>
+<section class="grid cols-4">
+<div class="card"><div class="kpi"><span class="label">今日待辦</span><span class="value">14</span><span class="delta warn">較昨日 +3</span></div></div>
+<div class="card"><div class="kpi"><span class="label">待簽核單據</span><span class="value">08</span><span class="delta">平均處理時長下降 12%</span></div></div>
+<div class="card"><div class="kpi"><span class="label">異常警示</span><span class="value">05</span><span class="delta bad">含庫存缺貨 2 筆</span></div></div>
+<div class="card"><div class="kpi"><span class="label">本月完成率</span><span class="value">91%</span><span class="delta">流程穩定度提升</span></div></div>
+</section>
+<section class="split" style="margin-top:24px">
+<div class="grid">
+<div class="card">
+<div class="card-title"><div><h3>營運概況</h3><p>月度採購、銷售與回款趨勢</p></div><span class="tag info">本月</span></div>
+<div class="chart-bars">
+<div class="bar"><div style="height:40%"></div><span>一月</span></div>
+<div class="bar"><div style="height:56%"></div><span>二月</span></div>
+<div class="bar"><div style="height:68%"></div><span>三月</span></div>
+<div class="bar"><div style="height:72%"></div><span>四月</span></div>
+<div class="bar"><div style="height:86%"></div><span>五月</span></div>
+<div class="bar"><div style="height:64%"></div><span>六月</span></div>
+</div>
+<div class="legend"><span><span class="dot" style="background:var(--primary-700)"></span>營運指標</span><span><span class="dot" style="background:var(--primary-300)"></span>低飽和灰藍主題</span></div>
+</div>
+<div class="grid cols-2">
+<div class="card"><div class="card-title"><div><h3>快捷入口</h3><p>高頻工作快速啟動</p></div></div><div class="panel-list"><a class="notice" href="procurement.html"><div><strong>建立採購單</strong><div class="help">進入採購模組並檢視流程狀態</div></div><span>→</span></a><a class="notice" href="form-edit.html"><div><strong>建立 / 編輯表單頁</strong><div class="help">檢視分區式表單、草稿與底部固定操作列</div></div><span>→</span></a><a class="notice" href="document-detail.html"><div><strong>單據明細頁</strong><div class="help">查看欄位、明細表格、留言與流程節點</div></div><span>→</span></a><a class="notice" href="approval-history.html"><div><strong>簽核紀錄頁</strong><div class="help">查看完整簽核歷史與節點停留資訊</div></div><span>→</span></a></div></div>
+<div class="card"><div class="card-title"><div><h3>流程健康度</h3><p>跨模組作業狀態</p></div></div><div class="stats-list"><div class="stats-line"><span>採購完成率</span><div class="progress"><span style="width:78%"></span></div><strong>78%</strong></div><div class="stats-line"><span>銷售出貨率</span><div class="progress"><span style="width:84%"></span></div><strong>84%</strong></div><div class="stats-line"><span>庫存準確率</span><div class="progress"><span style="width:96%"></span></div><strong>96%</strong></div><div class="stats-line"><span>簽核時效</span><div class="progress"><span style="width:73%"></span></div><strong>73%</strong></div></div></div>
+</div>
+</div>
+<div class="grid">
+<div class="card"><div class="card-title"><div><h3>待辦事項</h3><p>今日需要優先處理</p></div></div><div class="panel-list"><div class="item-row"><div><div class="item-title">採購單 PO-202605-001 待主管審核</div><div class="item-meta">採購中心 ・ 10 分鐘前</div></div><span class="tag warning">待審核</span></div><div class="item-row"><div><div class="item-title">請假單 LV-202605-006 待二階主管簽核</div><div class="item-meta">人資行政部 ・ 30 分鐘前</div></div><span class="tag warning">待我簽核</span></div><div class="item-row"><div><div class="item-title">庫存預警：產品料號三低於安全庫存</div><div class="item-meta">物流管理部 ・ 1 小時前</div></div><span class="tag error">缺貨</span></div></div></div>
+<div class="card"><div class="card-title"><div><h3>最新公告</h3><p>系統與內部提醒</p></div></div><div class="panel-list"><div class="notice info"><div><strong>系統更新預告</strong><div class="help">本週末將進行報表模組版本更新。</div></div></div><div class="notice warning"><div><strong>月底結帳提醒</strong><div class="help">請於本月最後工作日前完成憑證送審。</div></div></div></div></div>
+</div>
+</section>
+</div>
+</main>
+<dialog class="card" id="demo-modal" style="max-width:520px;border:none"><div class="card-title"><h3>互動示意</h3><button class="icon-btn round" data-close-modal="">×</button></div><p class="page-desc" data-modal-message="" style="margin:0"></p><div class="action-row" style="margin-top:16px"><button class="btn btn-primary" data-close-modal="">了解</button></div></dialog>
+</body>
+</html>
